@@ -1,0 +1,15 @@
+[class*=sidebar-dark] .brand-link{
+    border-bottom: none !important;
+}
+.sidebar-dark-light .nav-sidebar>.nav-item>.nav-link{
+    color: white !important;
+}
+.sidebar-dark-light .nav-sidebar>.nav-item>.nav-link.active{
+    color: black !important;
+}
+.main-sidebar.sidebar-dark-light{
+    background-color: #0F59A4 !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black !important;
+}
