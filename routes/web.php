@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HospitalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('home', [HomeController::class, 'index'])->name('home');
+Route::resource('hospitals', HospitalController::class)->names('hospitals');
+Route::get('get-kabupaten', [HospitalController::class,'getKabupaten'])->name('hospital.kabupaten');
+Route::get('get-kecamatan', [HospitalController::class,'getKecamatan'])->name('hospital.kecamatan');

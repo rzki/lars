@@ -48,6 +48,20 @@
 </div>
 <div class="pt-3">
     <h5 class="font-weight-bold">Daftar Rumah Sakit</h5>
+    <table class="table" id="tableRS">
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Status</th>
+                <th scope="col"> </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 </div>
 @stop
 
@@ -56,6 +70,12 @@
 
 @section('js')
 <script>
-    console.log("Hi, I'm using the Laravel-AdminLTE package!");
+    $(document).ready( function () {
+    $('#tableRS').DataTable({
+        searching: false,
+        info: false,
+        lengthChange: false
+    });
+    } );
 </script>
 @stop

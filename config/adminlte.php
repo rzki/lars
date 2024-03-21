@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'LARS',
     'title_prefix' => '',
-    'title_postfix' => '',
+    'title_postfix' => '- LARS',
 
     /*
     |--------------------------------------------------------------------------
@@ -302,7 +302,7 @@ return [
         [
             'text' => 'Rumah Sakit',
             'icon' => 'fas fa-fw fa-hospital',
-            'url' => 'rumah_sakit',
+            'route' => 'hospitals.index',
         ],
         [
             'text' => 'Akreditas',
